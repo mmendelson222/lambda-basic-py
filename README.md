@@ -14,8 +14,10 @@ http://docs.aws.amazon.com/lambda/latest/dg/lambda-python-how-to-create-deployme
 
 Look here for more details: https://blogs.aws.amazon.com/net/post/Tx381XNNQALP8BA/AWS-Lambda-Support-in-Visual-Studio
 
-### Deployment using S3 and CloudFormation
-1. Invoke package-s3 whcih packages the code into a zip file, then uploads the zip plus a CloudFormation template s3.  
-1. From the AWS console, invoke the cloudformation template to create the Lambda (could be scripted). 
-1. after that use update-from-s3.sh to invoke.
+### Deployment scripts: 
 
+These scripts are not to be used OOTB.  Please review each one before using.  
+1. config.sh - Settings used by multiple scripts. 
+1. package.sh - Creates a zip file containing the python module and its dependencies. 
+1. deploy.sh - First-time packaging and deployment.
+1. update.sh - Lambda function code update only.

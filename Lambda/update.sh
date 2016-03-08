@@ -1,6 +1,6 @@
 #!/bin/bash -e
 #
-# update - Update a lambda function 
+# update - Update the lambda function 
 #
 
 	source config.sh
@@ -13,7 +13,3 @@
 
 #remove locally
 	rm $lambda_zip_file
-
-
-
-
