@@ -7,9 +7,12 @@
 
     source package.sh
 
+	set -x
+
 	aws lambda update-function-code \
 		--function-name  $function \
-		--zip-file  fileb://$lambda_zip_file
+		--zip-file  fileb://$lambda_zip_file \
+		--handler $lambda_handler
 
 #remove locally
 	rm $lambda_zip_file

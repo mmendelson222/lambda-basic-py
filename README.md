@@ -17,7 +17,7 @@ Look here for more details: https://blogs.aws.amazon.com/net/post/Tx381XNNQALP8B
 ### Deployment scripts: 
 
 These scripts are not to be used OOTB.  Please review each one before using.  
-1. config.sh - Settings used by multiple scripts. 
-1. package.sh - Creates a zip file containing the python module and its dependencies. 
-1. deploy.sh - First-time packaging and deployment.
-1. update.sh - Lambda function code update only.
+ 1. config.sh - Settings used by multiple scripts. 
+ 1. package.sh - Creates a zip file containing the python module and its dependencies. 
+ 1. deploy.sh - First-time packaging and deployment.
+ 1. update.sh - Lambda function code update only.
